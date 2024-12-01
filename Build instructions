@@ -1,0 +1,50 @@
+# Build instructions
+
+To build 7-Zip from source, you'll need to download the source code, set up a suitable development environment (like a C++ compiler and build tools), and then compile the project using a build system like Make; typically requiring a few steps including configuring the build options, compiling the code, and finally generating the executable files. 
+Prerequisites:
+
+Download 7-Zip source code: Visit the official 7-Zip website and download the latest source code package (usually in a .zip or .tar.gz format). 
+C++ Compiler: Install a compatible C++ compiler like GCC or Clang. 
+
+Build System: Familiarity with a build system like Make is recommended. 
+
+Building Steps:
+1. Extract and Navigate:
+Extract the downloaded 7-Zip archive to a suitable directory on your system. 
+Open a terminal or command prompt and navigate to the extracted source code directory (usually named "CPP/7zip"). 
+
+2. Configure the Build:
+Make File:
+Most likely, you'll need to use a "Makefile" within the "Bundles/Alone2" folder to configure the build process.
+Compiler Specific Options:
+Depending on your compiler, you might need to specify flags like optimization level, architecture, etc. 
+
+3. Compile the Code:
+Basic Compilation: Run the command "make" in the terminal to start the compilation process. 
+Parallel Compilation: To speed up the build, use "make -j [number of cores]" to utilize multiple CPU cores. 
+Important Considerations:
+Platform Specific Builds:
+
+If you want to build 7-Zip for a specific operating system or architecture, you might need to use platform-specific build options within the Makefile. 
+Assembler Optimizations:
+Some 7-Zip code uses assembly language for performance optimizations; ensure your compiler supports the necessary assembly instructions. 
+Example Command (assuming GCC compiler):
+Code
+
+cd CPP/7zip/Bundles/Alone2
+
+make -j 4  
+Where to Find Built Binaries:
+After successful compilation, the built 7-Zip executable files will usually be located within the "Bin" folder within the "CPP/7zip" directory, categorized by architecture (like "x86" or "x64"). 
+[Tutorial] Building 7-Zip 16.04 for Beginners, VisualStudio 2008 Port
+Jan 31, 2017 — Setting Up Environment and Building: Step 1: Install Visual Studio 2008 (for 64bit builds, do a custom install and ens...
+
+SourceForge
+WinMerge/sevenzip: Unofficial clone of http ... - GitHub
+At first you must change the current folder to folder that contains `makefile.gcc`: cd CPP/7zip/Bundles/Alone2 Then you can compil...
+
+GitHub
+How to Install, Compress & Encrypt Files with 7-Zip - Lenovo
+How do I install 7-zip? To install 7-zip on your computer, you can visit the 7-zip website and download the installer for your ope...
+
+
