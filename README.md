@@ -1,8 +1,11 @@
 # 7-Zip on GitHub
 7-Zip website: [7-zip.org](https://7-zip.org)
 
+7-zip websire downloads page: (https://www.7-zip.org/download.html)
+
 7-zip primary project website: (https://sourceforge.net/projects/sevenzip/).
 
+Latest Official Github Releases: (https://github.com/ip7z/7zip/releases)
 
 
 7-Zip is a file archiver with a high compression ratio. 7-Zip works in Windows 11 / 10 / 8 / 7 / Vista / XP / 2022 / 2019 / 2016 / 2012 / 2008 / 2003 / 2000.
